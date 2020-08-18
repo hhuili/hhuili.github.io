@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hhuili.github.io</id>
     <title>猫问题</title>
-    <updated>2020-08-18T06:41:48.122Z</updated>
+    <updated>2020-08-18T06:47:33.720Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hhuili.github.io"/>
     <link rel="self" href="https://hhuili.github.io/atom.xml"/>
@@ -10,6 +10,15 @@
     <logo>https://hhuili.github.io/images/avatar.png</logo>
     <icon>https://hhuili.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 猫问题</rights>
+    <entry>
+        <title type="html"><![CDATA[Mine]]></title>
+        <id>https://hhuili.github.io/post/mine/</id>
+        <link href="https://hhuili.github.io/post/mine/">
+        </link>
+        <updated>2020-08-18T06:47:03.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://hhuili.github.io/post-images/1597733240619.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[小圆]]></title>
         <id>https://hhuili.github.io/post/xiao-yuan/</id>
