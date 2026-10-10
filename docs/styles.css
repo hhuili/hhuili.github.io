@@ -1,0 +1,17 @@
+/* Small content adaptations to the original Minimal Light CSS. */
+.image.avatar {width:104px; height:104px; margin:20px; overflow:hidden}
+.image.avatar img {position:absolute; width:240%; max-width:none; height:auto; padding:0; border-radius:0; left:-67.5%; top:-107.5%}
+@media(max-width:960px){.image.avatar {width:117px; height:117px}}
+@media(max-width:480px){.image.avatar {width:95px; height:95px}}
+.email {color:inherit}
+.social-icons a {margin:0 3px 0 0; vertical-align:middle}
+.social-icons svg {width:19px; height:19px; fill:currentColor; vertical-align:middle}
+.cv-icon {font-size:19px; font-weight:600}
+.rg-icon {font-size:24px}
+.orcid-icon {font-family:Arial,sans-serif; font-size:16px}
+.publications {margin-top:0}
+.publications ol.bibliography li {min-height:0; margin-bottom:22px}
+.publications .links {margin-top:5px; font-size:12px}
+.publication-note {font-size:13px}
+a:focus-visible {outline:2px solid #39c; outline-offset:3px}
+@media(max-width:960px){header{padding-bottom:12px} section{border-bottom:0}}
