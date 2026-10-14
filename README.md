@@ -1,30 +1,49 @@
 # Huihui Li — Academic Homepage
 
-Website: https://hhuili.github.io/
+- Home: https://hhuili.github.io/
+- Publications: https://hhuili.github.io/publications/
 
-A static academic homepage using the Minimal Light template. No JavaScript, package installation, or build step is needed. GitHub Pages publishes `docs/` from the `main` branch; a push to that branch triggers publication.
+Two static pages adapted from [Yaoyao Liu's public personal website template](https://github.com/yaoyao-liu/personal-website). The site uses a black navigation bar and the Source Sans 3 / Montserrat font combination from the reference lab website. The original template license and self-hosted font licenses are retained. GitHub Pages publishes `docs/` from `main`.
 
-## Editing
+## Edit and publish
 
-- `docs/index.html`: biography, research interests, publications, software, and contact links.
-- `docs/styles.css`: local styling, including portrait framing.
-- `docs/assets/huihui-li.jpg`: portrait.
-- `docs/assets/Huihui-Li-CV.pdf`: downloadable CV.
-- `docs/assets/css/`: original template styles.
+The editable sources are:
+
+| Source | What it changes |
+| --- | --- |
+| `content/home.html` | Introduction, research interests, software and contact |
+| `content/news.json` | News, newest first; entries beyond four get a Show more button |
+| `content/publications.json` | Publications, figures and resource links |
+| `templates/hero.html` | Portrait, name, affiliation and profile links shared by both pages |
+| `templates/header.html` | Shared top navigation |
+| `templates/base.html` | Page head, shared structure and footer |
+| `docs/styles.css` | Personal style overrides |
+| `docs/assets/huihui-li.jpg` | Original portrait |
+| `docs/assets/Huihui-Li-CV.pdf` | Downloadable CV |
+
+After editing content or templates, regenerate the pages with standard Python:
+
+```bash
+python3 scripts/build_site.py
+```
+
+The generated files are `docs/index.html` and `docs/publications/index.html`. You can edit those files directly, but a later regeneration will replace direct edits. Commit and push both source changes and generated pages to `main`; GitHub Pages will publish them automatically. No package installation or Jekyll build is required.
 
 ## Local preview
-
-From the repository directory, run:
 
 ```bash
 python3 -m http.server 4173 --directory docs
 ```
 
-Open http://localhost:4173 and refresh after editing. Commit and push changes to `main` to update the public website.
+Open http://localhost:4173 and refresh after editing.
+
+## Extending the website
+
+The header, personal profile and page shell are shared templates. To add a future Group, Research, or Contact page, add its content, render it with `build_page` in `scripts/build_site.py`, and add its link in `templates/header.html`. The current navigation contains only Home and Publications.
 
 ## CV source
 
-`cv/Huihui-Li-CV.md` is an editable text reference. The PDF generator `cv/build_cv.py` currently contains its own text; editing the Markdown alone does not regenerate the PDF. To rebuild, update the generator, install its `reportlab` and `pypdf` dependencies in a Python environment, then run:
+`cv/Huihui-Li-CV.md` is an editable text reference. The PDF generator `cv/build_cv.py` currently contains its own text; editing the Markdown alone does not regenerate the PDF. To rebuild, update the generator, install `reportlab` and `pypdf` in a Python environment, then run:
 
 ```bash
 python3 cv/build_cv.py
@@ -34,6 +53,6 @@ Alternatively, replace `docs/assets/Huihui-Li-CV.pdf` with a prepared PDF.
 
 ## Provenance and licenses
 
-The webpage and all assets were copied unchanged from the existing Sites publication. The Sites website remains available at https://hhuili.sweet-birch-1196.chatgpt.site/; GitHub commits do not automatically update that separate publication.
+See `SOURCES.md`, `TEMPLATE-LICENSE`, and `docs/assets/fonts/`. No additional license is granted here for personal photographs or CV content.
 
-See `SOURCES.md` for content provenance. Minimal Light and font licenses are retained under `docs/assets/fonts/`. No additional license is granted here for personal photographs or CV content.
+The earlier Sites website remains at https://hhuili.sweet-birch-1196.chatgpt.site/. It is a separate publication and is not updated by GitHub commits.

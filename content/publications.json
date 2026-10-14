@@ -1,0 +1,61 @@
+[
+  {
+    "title": "Multidimensional telomere diversity and inheritance at individual and population scales",
+    "url": "https://doi.org/10.64898/2026.08.19.745664",
+    "authors_html": "<strong>Huihui Li†</strong>, Congying Chen†, Ludong Yang†, et al.",
+    "venue_html": "<em>bioRxiv</em>, 2026. Preprint.",
+    "year": 2026,
+    "preprint": true,
+    "badge": "Preprint",
+    "image": "telomere-fig1.jpg",
+    "image_alt": "Algorithmic and functional design of TeloXplorer",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.64898/2026.08.19.745664"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/hhuili/TeloXplorer"
+      }
+    ]
+  },
+  {
+    "title": "Super-pangenome analysis of 3562 human and animal papillomavirus isolates illuminates their genome and pathogenicity evolution",
+    "url": "https://doi.org/10.1101/2025.07.20.664904",
+    "authors_html": "<strong>Huihui Li†</strong>, Jingtao Chen†, Xinxin Zhang†, et al.",
+    "venue_html": "<em>bioRxiv</em>, 2025. Preprint.",
+    "year": 2025,
+    "preprint": true,
+    "badge": "Preprint",
+    "image": "pangenome-fig1.jpg",
+    "image_alt": "Global sampling and genomic diversity of 3562 papillomavirus genomes",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1101/2025.07.20.664904"
+      }
+    ]
+  },
+  {
+    "title": "riboCIRC: a comprehensive database of translatable circRNAs",
+    "url": "https://doi.org/10.1186/s13059-021-02300-7",
+    "authors_html": "<strong>Huihui Li†</strong>, Mingzhe Xie†, Yan Wang†, Ludong Yang, Zhi Xie, Hongwei Wang",
+    "venue_html": "<em>Genome Biology</em>, 2021.",
+    "year": 2021,
+    "preprint": false,
+    "badge": "Genome Biol.",
+    "image": "ribocirc-fig1.png",
+    "image_alt": "Overview of the riboCIRC database",
+    "links": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1186/s13059-021-02300-7"
+      },
+      {
+        "label": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33685493/"
+      }
+    ]
+  }
+]

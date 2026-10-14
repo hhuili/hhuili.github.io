@@ -1,17 +1,60 @@
-/* Small content adaptations to the original Minimal Light CSS. */
-.image.avatar {width:104px; height:104px; margin:20px; overflow:hidden}
-.image.avatar img {position:absolute; width:240%; max-width:none; height:auto; padding:0; border-radius:0; left:-67.5%; top:-107.5%}
-@media(max-width:960px){.image.avatar {width:117px; height:117px}}
-@media(max-width:480px){.image.avatar {width:95px; height:95px}}
-.email {color:inherit}
-.social-icons a {margin:0 3px 0 0; vertical-align:middle}
-.social-icons svg {width:19px; height:19px; fill:currentColor; vertical-align:middle}
-.cv-icon {font-size:19px; font-weight:600}
-.rg-icon {font-size:24px}
-.orcid-icon {font-family:Arial,sans-serif; font-size:16px}
-.publications {margin-top:0}
-.publications ol.bibliography li {min-height:0; margin-bottom:22px}
-.publications .links {margin-top:5px; font-size:12px}
-.publication-note {font-size:13px}
-a:focus-visible {outline:2px solid #39c; outline-offset:3px}
-@media(max-width:960px){header{padding-bottom:12px} section{border-bottom:0}}
+/* Personal adaptations of Yaoyao Liu's original template. */
+:root {--navy:#161616; --orange:#666; --orange-ink:#555; --global-theme-color:#242424}
+body {font:17.5px/1.5 'Source Sans 3',sans-serif; color:#4a4a4a}
+h1,h2,h3,h4,h5,h6,.publications h2.year {color:#202020}
+h1 {font-family:'Montserrat','Source Sans 3',sans-serif}
+a {color:#286b8b}
+a:hover {color:#171717}
+.topnav {background:#111; min-height:48px}
+.topnav a.normal::after {background:#ddd}
+.site-brand {display:inline-block; color:#fff; font:600 17px/48px 'Source Sans 3',sans-serif; margin-left:calc(50% - 423px); letter-spacing:.015em}
+.site-brand:hover {color:#fff}
+.menu-toggle {display:none; border:0; background:none; color:#fff; width:48px; height:48px; cursor:pointer}
+.menu-toggle svg {width:21px; height:21px; fill:none; stroke:currentColor; stroke-width:1.7}
+.hero .image.avatar {position:relative; height:120px; border:2px solid #e3e7ee; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,.12); box-sizing:border-box}
+.hero .image.avatar img {position:absolute; display:block; width:240%; max-width:none; height:auto; padding:0; border:0; border-radius:0; box-shadow:none; left:-67.5%; top:-107.5%}
+.hero h1 {font-weight:700; font-size:1.95rem}
+.hero .hero-position {color:#666}
+.hero-pill svg {width:15px; height:15px; fill:none; stroke:currentColor; stroke-width:1.6}
+.hero-pill svg.filled {fill:currentColor; stroke:none}
+.hero-pill {color:#333}
+.hero-pill:hover {background:#222; border-color:#222}
+.dated-list li>strong:first-child {font-family:'Source Sans 3',sans-serif}
+.news-list li {padding-top:6px; padding-bottom:6px}
+.news-toggle button {font:600 .86rem 'Source Sans 3',sans-serif; color:#333; background:#fff; border:1.5px solid #ddd; border-radius:20px; padding:5px 14px; cursor:pointer}
+.news-toggle button:hover {background:#222; border-color:#222; color:#fff}
+[hidden] {display:none!important}
+.publications ol.bibliography li {padding-left:12px; padding-right:12px}
+.publication-art {position:relative; padding:0 15px; flex:0 0 230px; box-sizing:border-box}
+.publication-text {position:relative; padding:0 15px 0 20px; min-width:0}
+.publications ol.bibliography li .teaser {width:100%; height:123px; object-fit:contain; background:#fff; margin-left:0}
+.publications ol.bibliography li .abbr {height:auto; margin-bottom:0}
+.publications ol.bibliography li .abbr abbr {top:9px; left:18px}
+.publications ol.bibliography li .author {font-size:.88em}
+.publications ol.bibliography li .periodical {font-size:.9em}
+.publications ol.bibliography li:hover .title {color:#242424}
+.publication-note {font-size:.85rem; color:#777}
+.site-footer {padding:32px 0 30px; color:#888; font:12px/1.4 'Source Sans 3',sans-serif}
+.site-footer a {color:inherit}
+.skip-link {position:absolute; left:12px; top:-80px; background:#fff; padding:8px 12px; z-index:1001}
+.skip-link:focus {top:8px}
+a:focus-visible,button:focus-visible {outline:2px solid #555; outline-offset:4px}
+@media(max-width:1000px){.site-brand {margin-left:28px}}
+@media(max-width:960px){
+ .site-brand {margin-left:28px}
+ .menu-toggle {display:block; position:absolute; right:20px; top:0}
+ .topnav #myLinks {display:flex}
+ .topnav a.normal.active {color:#ddd}
+ .hero .image.avatar {height:110px}
+ .site-footer {padding-left:28px; padding-right:28px}
+}
+@media(max-width:630px){.hero .hero-affil-depts {display:inline}.hero .hero-pill-extra {display:inline-flex}}
+@media(max-width:600px){
+ .pub-row {flex-direction:column; align-items:stretch; gap:15px}
+ .publication-art {flex:0 0 auto; width:230px; align-self:center}
+ .publication-text {padding:0}
+ .publications ol.bibliography li {margin:0 0 26px; padding:10px 0}
+ .pub-section-title {flex-wrap:wrap}
+}
+@media(max-width:480px){.hero .image.avatar {height:92px}.hero h1 {font-size:1.55rem}}
+@media(prefers-reduced-motion:reduce){html {scroll-behavior:auto}*,*::before,*::after {transition:none!important}}
