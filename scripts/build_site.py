@@ -35,7 +35,7 @@ def publication_item(p):
     badge = '<abbr class="badge" data-venue="' + esc(p['badge']) + '" title="' + ('Preprint' if p['preprint'] else 'Genome Biology') + '">' + esc(p['badge']) + '</abbr>'
     links = ' '.join('<a class="btn" href="' + esc(link['url']) + '" target="_blank" rel="noopener">' + esc(link['label']) + '</a>' for link in p['links'])
     return f'''<li><div class="pub-row">
-<div class="col-sm-3 abbr publication-art"><a href="{image}" target="_blank" rel="noopener" aria-label="View full figure: {esc(p['image_alt'])}"><img src="{image}" class="teaser" alt="{esc(p['image_alt'])}"></a>{badge}</div>
+<div class="col-sm-3 abbr publication-art"><img src="{image}" class="teaser" alt="{esc(p['image_alt'])}">{badge}</div>
 <div class="col-sm-9 publication-text"><div class="title"><a href="{esc(p['url'])}">{esc(p['title'])}</a></div>
 <div class="author">{p['authors_html']}</div><div class="periodical">{p['venue_html']}</div><div class="links">{links}</div></div>
 </div></li>\n'''

@@ -21,3 +21,5 @@ Original publication figures are unmodified and displayed proportionally with ob
 - riboCIRC Figure 1: https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13059-021-02300-7/MediaObjects/13059_2021_2300_Fig1_HTML.png . Li et al. (2021), https://doi.org/10.1186/s13059-021-02300-7 . CC BY 4.0.
 
 No Illinois branding, personal information, achievements, research content, analytics, or third-party tracking scripts were copied into this personal website. The older Sites publication is retained independently.
+
+2026-10-14 link refinement: removed ORCID and ResearchGate from the shared profile, added a GitHub SVG icon, moved the unchanged CV PDF link to top navigation, and removed anchors around publication figures. Reference template uses an image path per publication and an unlinked img element; its CSS uses object-fit: cover for display framing.
